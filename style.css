@@ -75,3 +75,49 @@ footer {
     border-top: 1px solid #ccc;
     border-radius: 5px;
 }
+
+.carrossel {
+    width: 400px;
+    height: 400px;
+    margin: 30px auto 10px;
+    overflow: hidden;
+    border-radius: none;
+}
+
+.carrossel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.carrossel img.ativa {
+    display: block;
+}
+
+.Botoes {
+    text-align: center;
+}
+
+.Botoes button {
+    padding: 12px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #7293a9;
+    color: white;
+    font-size: 16px;
+}
+
+.Camisas {
+    width: 80%;
+    margin-left: 90px;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+.Camisas th,
+.Camisas td {
+    padding: 10px;
+}

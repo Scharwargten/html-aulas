@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #3c3c3c;
+        }
+
+        .formulario {
+            width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid white;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .campo {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        button {
+            margin-top: 25px;
+            width: 100%;
+            padding: 8px;
+            background-color: rgba(20, 168, 33, 0.733);
+            color: white;
+            border: none;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <form action="#" method="post" class="formulario" onsubmit="alert('Dados salvos com sucesso')">
+        
+        <h2>Formulário de Cadastro</h2>
+
+        <label for="txtNome">Nome:</label>
+        <input type="text" class="campo" name="nome" id="txtNome" placeholder="Digite seu nome" required>
+        <br><br>
+
+        <label for="txtSobrenome">Sobrenome:</label>
+        <input type="text" class="campo" name="sobrenome" id="txtSobrenome" placeholder="Digite seu sobrenome" required>
+        <br><br>
+
+        <label>Data de Nascimento:</label>
+        <input type="date" class="campo" name="nascimento" min="1940-01-01" max="2026-01-01" required>
+        <br><br>
+
+        <label>E-mail:</label>
+        <input type="email" class="campo" name="email" required placeholder="Digite seu email">
+        <br><br>
+
+        <label>Senha:</label>
+        <input type="password" class="campo" name="senha" placeholder="Digite sua senha" required>
+        <br><br>
+
+        <label>Confirmação de Senha:</label>
+        <input type="password" class="campo" name="confirmacao" placeholder="Confirme sua senha" required>
+        <br><br>
+
+        <h3>Gênero:</h3>
+        <input type="radio" name="genero" value="Homem" required> Homem
+        <input type="radio" name="genero" value="Mulher"> Mulher
+        <input type="radio" name="genero" value="Nada"> Prefiro não dizer
+        <br><br>
+
+        <label>Cursos:</label>
+        <select class="campo" name="curso" required>
+            <option value="">Selecione</option>
+            <option value="Ds">Desenvolvimento de Sistemas</option>
+            <option value="info">Informática</option>
+            <option value="Redes">Redes</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</body>
+</html>
